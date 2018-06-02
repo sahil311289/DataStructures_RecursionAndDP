@@ -6,12 +6,15 @@ public class FibonacciSeries {
 
     // Memoization
     private static int fibo_topDown(int n) {
+        // base case
         if(n == 2) {
             return 1;
         }
+        // base case
         if(n == 1) {
             return 0;
         }
+        // recursive case
         return fibo_topDown(n-1) + fibo_topDown(n-2);
     }
 
