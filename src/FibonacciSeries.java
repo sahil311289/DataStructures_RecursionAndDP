@@ -23,9 +23,9 @@ public class FibonacciSeries {
         int[] series = new int[100];
         series[1] = 1;
 
-        for(int i=2; i< n; i++) {
-            series[i] += series[i-1] + series[i-2];
+        for (int i = 2; i < n; i++) {
+            series[i] += series[i - 1] + series[i - 2];
         }
-        return series[n-1];
+        return series[n - 1];
     }
 }
